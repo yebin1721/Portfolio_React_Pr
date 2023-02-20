@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('C:/Users/yeabi/OneDrive/바탕화~1-DESKTOP-D6OD264-1068752/react-practice/Abstract/abstract/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      plugin: require('C:/Users/yeabi/OneDrive/바탕화~1-DESKTOP-D6OD264-1068752/git/Portfolio_React_Pr/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["Teko","Poppins:300,400,500,600,700"],"display":"swap"},
     },{
-      plugin: require('C:/Users/yeabi/OneDrive/바탕화~1-DESKTOP-D6OD264-1068752/react-practice/Abstract/abstract/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('C:/Users/yeabi/OneDrive/바탕화~1-DESKTOP-D6OD264-1068752/git/Portfolio_React_Pr/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[],"minify":false,"transpileTemplateLiterals":false,"pure":false,"ssr":true},
     },{
-      plugin: require('C:/Users/yeabi/OneDrive/바탕화~1-DESKTOP-D6OD264-1068752/react-practice/Abstract/abstract/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/yeabi/OneDrive/바탕화~1-DESKTOP-D6OD264-1068752/git/Portfolio_React_Pr/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
