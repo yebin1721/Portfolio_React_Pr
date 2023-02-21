@@ -65,7 +65,7 @@ class HeroPersonal extends React.Component {
 
         const Heading = styled.div`
             .glitch {
-                font-size: 140px;
+                font-size: 50px;
                 line-height: 140px;
                 font-weight: 600;
                 text-align: center;
@@ -163,19 +163,18 @@ class HeroPersonal extends React.Component {
             <Section id="home">
                 <Overlay style={{height: `${this.state.width > 500 ? this.state.height : 350}px`}}>
                     <HeadingBox  className="parallax-hero-item animate">
-                        <SubHeading className="parallax-hero-item">
+                        {/*<SubHeading className="parallax-hero-item">
                             Hello, I'm
-                        </SubHeading>
+                           </SubHeading>*/}
                         <Heading className="parallax-hero-item">
-                            <Glitch text="Chanwoo Lee" />
+                            <Glitch text="이찬우" />
                         </Heading>
                         <Type className="parallax-hero-item">
                             <Typewriter
                                 options={{
                                 strings: [
-                                    'App Developer', 
-                                    'Web Designer',
-                                    'UX Developer',
+                                    'Assemble Artist', 
+                                    'Graphic Designer'
                                 ],
                                 autoStart: true,
                                 loop: true,
@@ -183,7 +182,7 @@ class HeroPersonal extends React.Component {
                             />
                         </Type>
                         <Resume href="./">
-                            Download Resume
+                            (포트폴리오사이트 연결)
                         </Resume>
                     </HeadingBox>
                     {this.shapes()}
