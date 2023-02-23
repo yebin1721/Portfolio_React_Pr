@@ -20,26 +20,22 @@ class Baffle_Text extends React.Component {
             this.setState({animation_complete: true})
             this.setState({obfuscate: false})
             this.forceUpdate()
-            setTimeout(() => { 
-                if (this.props.callMethodTime) {
-                    this.parentMethod()
-                }
-            }, 300)
+            if (this.props.text == "Lee Chanwoo") {
+                this.parentMethod()
+            }
         }
     }
 
     forceUpdate() {
-        const { revealDuration, revealDelay } = this.props
         setTimeout(() => { 
             this.setState({force:true})
-        }, revealDuration+revealDelay);
+        }, 2000);
     }
 
     parentMethod() {
-        const { callMethodTime } = this.props
         setTimeout(() => { 
             this.props.parentMethod()
-        }, callMethodTime);
+        }, 2000);
     }
 
     shouldComponentUpdate(nextProps, nextState) {

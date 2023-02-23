@@ -15,6 +15,20 @@ class PageRevealer extends React.Component {
         this.reveal = this.reveal.bind(this)
     }
 
+    reveal() {
+        if (!this.state.complete) {
+            this.setState({animation: true, complete: true})
+            setTimeout(() => { 
+                document.getElementById("reveal_container").style.backgroundColor = "transparent"
+                setTimeout(() => { 
+                    this.setState({animation: false, hide: true})
+                }, 500);
+            }, 400);
+        }
+    }
+
+
+
     baffle() {
         if (!this.state.complete) {
             return (
@@ -28,18 +42,6 @@ class PageRevealer extends React.Component {
                     />
                 </AnimationContainer>
             )
-        }
-    }
-
-    reveal() {
-        if (!this.state.complete) {
-            this.setState({animation: true, complete: true})
-            setTimeout(() => { 
-                document.getElementById("reveal_container").style.backgroundColor = "transparent"
-                setTimeout(() => { 
-                    this.setState({animation: false, hide: true})
-                }, 500);
-            }, 400);
         }
     }
 
