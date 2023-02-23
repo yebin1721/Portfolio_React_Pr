@@ -20,9 +20,11 @@ class Baffle_Text extends React.Component {
             this.setState({animation_complete: true})
             this.setState({obfuscate: false})
             this.forceUpdate()
-            if (this.props.callMethodTime) {
-                this.parentMethod()
-            }
+            setTimeout(() => { 
+                if (this.props.callMethodTime) {
+                    this.parentMethod()
+                }
+            }, 300)
         }
     }
 
@@ -58,12 +60,12 @@ class Baffle_Text extends React.Component {
 
     text() {
         const { text, revealDuration, revealDelay } = this.props
-        if (!this.state.force) {
+        if (true) {
             return (
                 <Baffle
-                    speed={50}
-                    characters={this.props.characters ? this.props.characters : "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*"}
-                    obfuscate={this.state.obfuscate}
+                    speed={60}
+                    characters={this.props.characters ? this.props.characters : "LECHANWO*%$#"}
+                    obfuscate={false}
                     update={true}
                     revealDuration={revealDuration}
                     revealDelay={revealDelay}

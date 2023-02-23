@@ -15,6 +15,22 @@ class PageRevealer extends React.Component {
         this.reveal = this.reveal.bind(this)
     }
 
+    baffle() {
+        if (!this.state.complete) {
+            return (
+                <AnimationContainer animation="fadeIn">
+                    <BaffleText
+                        text="Lee Chanwoo"
+                        revealDuration={500}
+                        revealDelay={1300}
+                        parentMethod={this.reveal}
+                        callMethodTime={2000}
+                    />
+                </AnimationContainer>
+            )
+        }
+    }
+
     reveal() {
         if (!this.state.complete) {
             this.setState({animation: true, complete: true})
@@ -24,24 +40,6 @@ class PageRevealer extends React.Component {
                     this.setState({animation: false, hide: true})
                 }, 500);
             }, 400);
-        }
-    }
-
-
-
-    baffle() {
-        if (!this.state.complete) {
-            return (
-                <AnimationContainer animation="fadeIn">
-                    <BaffleText
-                        text="Lee Chanwoo"
-                        revealDuration={300}
-                        revealDelay={800}
-                        parentMethod={this.reveal}
-                        callMethodTime={2000}
-                    />
-                </AnimationContainer>
-            )
         }
     }
 
@@ -85,17 +83,17 @@ class PageRevealer extends React.Component {
             width: 100%;
             pointer-events: none;
             height: 100%;
-            background-color: #04e5e5;
+            background-color: #00EBFF;
             transform: translateX(100%);
             &.animate {
                 animation: ${RevealAnimation} 1.1s cubic-bezier(0.2, 1, 0.3, 1) forwards;
             }
         `
         return (
-            <RevealContainer id="reveal_container" style={{display: this.state.hide ? "none" : "flex"}}>
-                {this.baffle()}
-                <Reveal id="revealer" className={this.state.animation ? "animate" : ""} />
-            </RevealContainer>
+                <RevealContainer id="reveal_container" style={{display: this.state.hide ? "none" : "flex"}}>
+                    {this.baffle()}
+                    <Reveal id="revealer" className={this.state.animation ? "animate" : ""} />
+                </RevealContainer>
         )
     }
 }
