@@ -22,6 +22,9 @@ class Layout extends React.Component {
       <div id="main">
         <Navbar scroll={this.props.isHome ? true : false} sections={this.props.sections} />
         <PageRevealer />
+        {setTimeout(() => { 
+            document.getElementById("reveal_container").style.display = "none"
+        }, 2500)}
         <div>
           {children}
         </div>
