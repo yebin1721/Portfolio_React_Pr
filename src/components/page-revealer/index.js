@@ -94,7 +94,6 @@ class PageRevealer extends React.Component {
         return (
                 <RevealContainer id="reveal_container" style={{display: this.state.hide ? "none" : "flex"}}>
                     {this.baffle()}
-                    <Reveal id="revealer" className={this.state.animation ? "animate" : ""} />
                 </RevealContainer>
         )
     }
