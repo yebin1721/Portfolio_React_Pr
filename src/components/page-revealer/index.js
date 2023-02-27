@@ -16,27 +16,23 @@ class PageRevealer extends React.Component {
     }
 
     reveal() {
-        if (!this.state.complete) {
             this.setState({animation: true, complete: true, hide: true})
-        }
+            console.log(animation + " | " + complete + " | " + hide)
     }
-
-
+    
 
     baffle() {
-        if (!this.state.complete) {
             return (
                 <AnimationContainer animation="fadeIn">
                     <BaffleText
-                        text="Lee-Chanwoo"
+                        text="Lee Chanwoo"
                         revealDuration={500}
-                        revealDelay={1300}
+                        revealDelay={900}
                         parentMethod={this.reveal}
                         callMethodTime={2000}
                     />
                 </AnimationContainer>
             )
-        }
     }
 
     render() {
