@@ -20,9 +20,7 @@ class Baffle_Text extends React.Component {
             this.setState({animation_complete: true})
             this.setState({obfuscate: false})
             this.forceUpdate()
-            if (this.props.text == "Lee Chanwoo") {
-                this.parentMethod()
-            }
+            this.parentMethod()
         }
     }
 

@@ -28,7 +28,7 @@ class PageRevealer extends React.Component {
             return (
                 <AnimationContainer animation="fadeIn">
                     <BaffleText
-                        text="Lee Chanwoo"
+                        text="Lee-Chanwoo"
                         revealDuration={500}
                         revealDelay={1300}
                         parentMethod={this.reveal}

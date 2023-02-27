@@ -30,8 +30,8 @@ class Index extends React.Component {
           <AboutPersonal />
           <ServicesThree />
           <PortfolioThree />
-          <TestimonialsThree />
-          <ClientsThree />
+          {/*<TestimonialsThree />
+          {/*<ClientsThree />*/}
           <ContactPersonal />
         </Layout>
       </div>
