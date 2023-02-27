@@ -19,21 +19,10 @@ class Baffle_Text extends React.Component {
             this.setState({inViewport: this.props.inViewport})
             this.setState({animation_complete: true})
             this.setState({obfuscate: false})
-            this.forceUpdate()
-            this.parentMethod()
+            setTimeout(() => { 
+                document.getElementById("reveal_container").style.display = "none"
+            }, 2500);
         }
-    }
-
-    forceUpdate() {
-        setTimeout(() => { 
-            this.setState({force:true})
-        }, 2000);
-    }
-
-    parentMethod() {
-        setTimeout(() => { 
-            this.props.parentMethod()
-        }, 2000);
     }
 
     shouldComponentUpdate(nextProps, nextState) {

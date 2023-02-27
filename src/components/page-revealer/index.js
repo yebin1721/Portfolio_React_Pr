@@ -12,12 +12,6 @@ class PageRevealer extends React.Component {
             complete: false,
             hide: false
         }
-        this.reveal = this.reveal.bind(this)
-    }
-
-    reveal() {
-            this.setState({animation: true, complete: true, hide: true})
-            console.log(animation + " | " + complete + " | " + hide)
     }
     
 
