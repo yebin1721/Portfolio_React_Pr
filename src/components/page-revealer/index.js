@@ -12,6 +12,14 @@ class PageRevealer extends React.Component {
             complete: false,
             hide: false
         }
+        this.reveal = this.reveal.bind(this)
+    }
+
+    reveal() {
+        {setTimeout(() => { 
+            this.setState({hide: true});
+        }, 3000)}
+        console.log(this.state.animation + " | " + this.state.complete + " | " + this.state.hide)
     }
     
 
@@ -22,7 +30,6 @@ class PageRevealer extends React.Component {
                         text="Lee Chanwoo"
                         revealDuration={500}
                         revealDelay={900}
-                        parentMethod={this.reveal}
                         callMethodTime={2000}
                     />
                 </AnimationContainer>
@@ -56,6 +63,7 @@ class PageRevealer extends React.Component {
         return (
                 <RevealContainer id="reveal_container" style={{display: this.state.hide ? "none" : "flex"}}>
                     {this.baffle()}
+                    {this.reveal()}
                 </RevealContainer>
         )
     }
