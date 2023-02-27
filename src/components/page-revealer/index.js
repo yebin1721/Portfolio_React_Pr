@@ -17,13 +17,7 @@ class PageRevealer extends React.Component {
 
     reveal() {
         if (!this.state.complete) {
-            this.setState({animation: true, complete: true})
-            setTimeout(() => { 
-                document.getElementById("reveal_container").style.backgroundColor = "transparent"
-                setTimeout(() => { 
-                    this.setState({animation: false, hide: true})
-                }, 500);
-            }, 400);
+            this.setState({animation: true, complete: true, hide: true})
         }
     }
 
@@ -67,30 +61,8 @@ class PageRevealer extends React.Component {
             @media (max-width: 500px) {
                 font-size: 30px;
             }
-        `;
+        `
 
-        const RevealAnimation = keyframes`
-            0% {
-                transform: translate3d(100%, 0, 0);
-            }
-            35%, 65% {
-                transform: translate3d(0, 0, 0);
-            }
-            100% {
-                transform: translate3d(-100%, 0, 0);
-            }
-        `
-        const Reveal = styled.div`
-            position: fixed;
-            width: 100%;
-            pointer-events: none;
-            height: 100%;
-            background-color: #00EBFF;
-            transform: translateX(100%);
-            &.animate {
-                animation: ${RevealAnimation} 1.1s cubic-bezier(0.2, 1, 0.3, 1) forwards;
-            }
-        `
         return (
                 <RevealContainer id="reveal_container" style={{display: this.state.hide ? "none" : "flex"}}>
                     {this.baffle()}
