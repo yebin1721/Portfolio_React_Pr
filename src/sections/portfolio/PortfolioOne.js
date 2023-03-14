@@ -44,7 +44,7 @@ class PortfolioOne extends React.Component {
           <Col md={4} key={index}>
               <PortfolioItem 
                 index={index} 
-                image={value.content.frontmatter.image.childImageSharp.fluid.src} 
+                img={value.content.frontmatter.image} 
                 text={value.content.frontmatter.title} 
                 category={value.content.frontmatter.category}
                 link={value.content.frontmatter.link}

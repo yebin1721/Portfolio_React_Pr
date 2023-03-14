@@ -93,7 +93,7 @@ class PortfolioTwo extends React.Component {
           <PortfolioItem 
             key={index}
             index={index} 
-            image={value.content.frontmatter.image.childImageSharp.fluid.src} 
+            img={value.content.frontmatter.image} 
             text={value.content.frontmatter.title} 
             category={value.content.frontmatter.category}
             link={value.content.frontmatter.link}

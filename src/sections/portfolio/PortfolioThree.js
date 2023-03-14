@@ -99,7 +99,7 @@ class PortfolioThree extends React.Component {
           <PortfolioItem 
             key={index}
             index={index} 
-            image={value.content.frontmatter.image.childImageSharp.fluid.src} 
+            img={value.content.frontmatter.img} 
             text={value.content.frontmatter.title} 
             category={value.content.frontmatter.category}
             link={value.content.frontmatter.link}
@@ -122,6 +122,7 @@ export default props => (
                       title
                       category
                       link
+                      img
                       image {
                         childImageSharp {
                           fluid(maxWidth: 1000) {

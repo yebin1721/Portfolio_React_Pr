@@ -32,11 +32,11 @@ class PortfolioItem extends React.Component {
             }
         `
         if (this.props.type === "slider") {
-            return <Image src={this.props.image} alt={this.props.text} />
+            return <Image src={this.props.img} alt={this.props.text} />
         } else {
             return (
                 <RevealContent callParentMethod={true} parentMethod={this.showContent}>
-                    <Image src={this.props.image} alt={this.props.text} />
+                    <Image src={this.props.img} alt={this.props.text} />
                 </RevealContent>
             )
         }
