@@ -180,10 +180,13 @@ class HeroPersonal extends React.Component {
                                 loop: true,
                                 }}
                             />
-                        </Type>
-                        <Resume href="./">
-                            (포트폴리오사이트 연결)
-                        </Resume>
+                        </Type><br></br>
+                        <a style={{fontSize: 13, color: "#B4B4B4", textDecoration: "underline"}} href="./">
+                            @Behance
+                        </a>
+                        <a style={{fontSize: 13, color: "#B4B4B4", textDecoration: "underline"}} href="./">
+                            @Instagram
+                        </a>
                     </HeadingBox>
                     {this.shapes()}
                 </Overlay>

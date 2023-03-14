@@ -92,13 +92,13 @@ class ContactPersonal extends React.Component {
             border: 2px solid #444;
         `
         const Icon = styled.img`
-            height: 70px;
-            width: 70px;
+            height: 80px;
+            width: 80px;
             object-fit: contain;
         `
 
         const InfoTitle = styled.h4`
-            font-size: 35px;
+            font-size: 27px;
             color: #fff;
             font-family: Teko;
             text-align: center;
@@ -106,7 +106,7 @@ class ContactPersonal extends React.Component {
 
         const Info = styled.div`
             position: relative;
-            bottom: 30px;
+            bottom: 20px;
         `
 
         const InfoLinkContainer = styled.div`
@@ -126,19 +126,6 @@ class ContactPersonal extends React.Component {
         return(
             <Section id="contact">
                 <Container>
-                  <AnimationContainer animation="fadeIn">
-                    <FormRow>
-                      <ContactCol md={6}>
-                          <ContactPersonalForm />
-                          <Gradient />
-                      </ContactCol>
-                      <ContactCol md={6}>
-                        <Map  
-                          title="map"
-                          src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"/>
-                      </ContactCol>
-                    </FormRow>
-                  </AnimationContainer>
                   <IconRow>
                       <IconCol md={4}>
                         <AnimationContainer animation="fadeIn" delay={500}>
@@ -155,44 +142,16 @@ class ContactPersonal extends React.Component {
                                   email@yoursite.com
                                 </InfoLink>
                               </InfoLinkContainer>
-                            </Info>
-                          </InfoPart>
-                        </AnimationContainer>
-                      </IconCol>
-                      <IconCol md={4}>
-                        <AnimationContainer animation="fadeIn" delay={1000}>
-                          <InfoPart>
-                            <IconContainer>
-                              <Icon src={this.props.phoneIcon.childImageSharp.fluid.src} alt="phone" />
-                            </IconContainer>
-                            <Info>
+                              <br></br>
                               <InfoTitle>
                                 Phone
                               </InfoTitle>
                               <InfoLinkContainer>
-                                <InfoLink href="tel:+(123)123-1234">
-                                  (123) 456-7890
+                                <InfoLink href="mailto:email@yoursite.com">
+                                  010-8264-8951
                                 </InfoLink>
                               </InfoLinkContainer>
-                            </Info>
-                          </InfoPart>
-                        </AnimationContainer>
-                      </IconCol>
-                      <IconCol md={4}>
-                        <AnimationContainer animation="fadeIn" delay={1500}>
-                          <InfoPart>
-                            <IconContainer>
-                              <Icon src={this.props.mapIcon.childImageSharp.fluid.src} alt="map" />
-                            </IconContainer>
-                            <Info>
-                              <InfoTitle>
-                                Address
-                              </InfoTitle>
-                              <InfoLinkContainer>
-                                <InfoLink target="_blank" href="https://maps.google.com/maps?ll=53.343244,-6.259338&z=14&t=m&hl=en&gl=US&mapclient=embed&q=1%20Grafton%20Street%20Dublin%20Ireland">
-                                  1 Grafton Street Dublin Ireland
-                                </InfoLink>
-                              </InfoLinkContainer>
+                              <br></br>
                             </Info>
                           </InfoPart>
                         </AnimationContainer>

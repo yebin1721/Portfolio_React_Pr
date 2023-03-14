@@ -16,7 +16,6 @@ class ServicesOne extends React.Component {
             position: relative;
             overflow: hidden;
             background-color: #111;
-            background-image: url(${this.props.background.childImageSharp.fluid.src});
             background-size: cover;
             .heading {
                 width: 100%;
@@ -137,151 +136,28 @@ class ServicesOne extends React.Component {
             <Section id="services">
                 <ServiceContainer>
                     <Container>
-                        <AnimatedHeading text="My Services" />
                         <Row>
                             <Col md={4}>
                                 <AnimationContainer animation="fadeInLeft" delay={200}>
                                         <ServiceElement>
-                                            <ServiceIcon>
-                                                    <img src={this.props.mobile.childImageSharp.fluid.src} alt="Mobile App Development" />
-                                            </ServiceIcon>
                                             <ServiceHeading>
-                                                Mobile App Development
+                                                Profile
                                             </ServiceHeading>
                                             <ServiceSeparator/>
+                                            <br></br>
                                             <ServiceList>
                                                 <ServiceListElement>
-                                                    Lorem ipsum dolor sit amet
+                                                22.03 ~ 22.04 Lorem ipsum dolor sit amet
                                                 </ServiceListElement>
                                                 <ServiceListElement>
-                                                    In vitae ultricies lacus vitae
+                                                22.03 ~ 22.04 In vitae ultricies lacus vitae
                                                 </ServiceListElement>
                                                 <ServiceListElement>
-                                                    Pellentesque blandit libero
+                                                22.03 ~ 22.04 Pellentesque blandit libero
                                                 </ServiceListElement>
                                             </ServiceList>
                                         </ServiceElement>
                                 </AnimationContainer>
-                            </Col>
-                            <Col md={4}>
-                                <AnimationContainer animation="fadeInDown"  delay={400}>
-                                    <ServiceElement>
-                                        <ServiceIcon>
-                                                <img src={this.props.web.childImageSharp.fluid.src} alt="Mobile App Development" />
-                                        </ServiceIcon>
-                                        <ServiceHeading>
-                                            Web  Development
-                                        </ServiceHeading>
-                                        <ServiceSeparator/>
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                            </ServiceListElement>
-                                        </ServiceList>
-                                    </ServiceElement>
-                                </AnimationContainer>
-                            </Col>
-                            <Col md={4}>
-                                <AnimationContainer animation="fadeInRight" delay={600}>
-                                    <ServiceElement>
-                                        <ServiceIcon>
-                                                <img src={this.props.email.childImageSharp.fluid.src} alt="Mobile App Development" />
-                                        </ServiceIcon>
-                                        <ServiceHeading>
-                                            Email Marketing
-                                        </ServiceHeading>
-                                        <ServiceSeparator/>
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                            </ServiceListElement>
-                                        </ServiceList>
-                                    </ServiceElement>
-                                </AnimationContainer>
-                            </Col>
-                            <Col md={4}>
-                                <AnimationContainer animation="fadeInLeft" delay={800}>
-                                    <ServiceElement>
-                                        <ServiceIcon>
-                                                <img src={this.props.seo.childImageSharp.fluid.src} alt="Mobile App Development" />
-                                        </ServiceIcon>
-                                        <ServiceHeading>
-                                            Search Engine Optimization
-                                        </ServiceHeading>
-                                        <ServiceSeparator/>
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                            </ServiceListElement>
-                                        </ServiceList>
-                                    </ServiceElement>
-                                </AnimationContainer>
-                            </Col>
-                            <Col md={4}>
-                                <AnimationContainer animation="fadeInUp" delay={1000}>
-                                    <ServiceElement>
-                                        <ServiceIcon>
-                                                <img src={this.props.network.childImageSharp.fluid.src} alt="Mobile App Development" />
-                                        </ServiceIcon>
-                                        <ServiceHeading>
-                                            Network Management
-                                        </ServiceHeading>
-                                        <ServiceSeparator/>
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                            </ServiceListElement>
-                                        </ServiceList>
-                                    </ServiceElement>
-                                </AnimationContainer>
-                            </Col>
-                            <Col md={4}>
-                                    <AnimationContainer animation="fadeInRight" delay={1200}>
-                                        <ServiceElement>
-                                            <ServiceIcon>
-                                                    <img src={this.props.ui.childImageSharp.fluid.src} alt="Mobile App Development" />
-                                            </ServiceIcon>
-                                            <ServiceHeading>
-                                                UI/UX Development
-                                            </ServiceHeading>
-                                            <ServiceSeparator/>
-                                            <ServiceList>
-                                                <ServiceListElement>
-                                                    Lorem ipsum dolor sit amet
-                                                </ServiceListElement>
-                                                <ServiceListElement>
-                                                    In vitae ultricies lacus vitae
-                                                </ServiceListElement>
-                                                <ServiceListElement>
-                                                    Pellentesque blandit libero
-                                                </ServiceListElement>
-                                            </ServiceList>
-                                        </ServiceElement>
-                                    </AnimationContainer>
                             </Col>
                         </Row>
                     </Container>

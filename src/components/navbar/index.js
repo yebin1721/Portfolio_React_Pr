@@ -136,9 +136,6 @@ class Navbar extends React.Component {
         return(
             <NavbarWrapper className={`header${this.state.sticky === true ? ' sticky' : ''}`}>
                 <NavbarContainer>
-                    <LogoWrapper className="logo">
-                        <Logo src="/img/logo.png" alt="logo" />
-                    </LogoWrapper>
                     <Toggler
                         onClick={() => this.collapseNav()}
                         className="navbar-toggler navbar-toggler-right"

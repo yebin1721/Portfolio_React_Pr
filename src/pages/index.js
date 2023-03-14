@@ -24,10 +24,10 @@ class Index extends React.Component {
         </Helmet>
         <Layout
           isHome={true}
-          sections={['home', 'about', 'services', 'portfolio', 'testimonials', 'clients', 'contact']}
+          sections={['home', 'about', 'portfolio', 'services', 'contact']}
         >
           <HeroPersonal />
-          <AboutPersonal />
+          {/*<AboutPersonal />*/}
           <ServicesThree />
           <PortfolioThree />
           {/*<TestimonialsThree />
